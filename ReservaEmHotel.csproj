@@ -208,14 +208,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Filhos.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="imagens\geral\" />
     <Folder Include="imagens\quartos\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imgPrincipal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

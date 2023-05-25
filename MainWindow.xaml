@@ -18,11 +18,9 @@
             <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
 
-        <Image x:Name="imgPrincipal" Height="395" Width="900" Grid.Row="0" Source="/imgPrincipal.png" >
-            <Image.OpacityMask>
-                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="/imgPrincipal.png"/>
-            </Image.OpacityMask>
-        </Image>
+        <!--<Image x:Name="imgLado1" Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral1.jpg" />
+        <Image x:Name="imgLado2" Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral2.png" />-->
+        <Image x:Name="imgPrincipal" Width="800" Height="395" HorizontalAlignment="Center" Source="/imagens/geral/imgPrincipal.png" />
 
 
     </Grid>
