@@ -208,8 +208,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="imagens\geral\" />
     <Folder Include="imagens\quartos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagens\geral\red_hotel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagens\geral\imgGeral1.jpg" />
+    <Resource Include="imagens\geral\imgGeral2.png" />
+    <Resource Include="imagens\geral\imgPrincipal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

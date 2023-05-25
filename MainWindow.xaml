@@ -9,18 +9,35 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
-        Title="Controle de Reservas" Height="1080" Width="1290">
+        Title="Controle de Reservas" Height="1080" Width="1290"
+        TitleCharacterCasing="Normal"
+        Icon="/imagens/geral/red_hotel.ico">
     <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="200"/>
-        </Grid.RowDefinitions>
+      <Grid.RowDefinitions>
+          <RowDefinition Height="400"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="200"/>
+      </Grid.RowDefinitions>
 
-        <!--<Image x:Name="imgLado1" Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral1.jpg" />
-        <Image x:Name="imgLado2" Width="100" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral2.png" />-->
-        <Image x:Name="imgPrincipal" Width="800" Height="395" HorizontalAlignment="Center" Source="/imagens/geral/imgPrincipal.png" />
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="180"/>
+        <ColumnDefinition Width="900"/>
+        <ColumnDefinition Width="210"/>
+      </Grid.ColumnDefinitions>
+
+      <StackPanel>
+        <Image x:Name="imgLado1" Grid.Row="0" Grid.Column="0" Width="178" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral1.jpg" />
+        <Image x:Name="imgLado2" Grid.Row="0" Grid.Column="0" Width="178" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform" Source="/imagens/geral/imgGeral2.png" />
+      </StackPanel>
+      
+      <Image x:Name="imgPrincipal" Grid.Row="0" Grid.Column="1" Width="800" Height="395" HorizontalAlignment="Center" Source="imagens/geral/imgPrincipal.png" />
+
+      <TextBlock x:Name="txtAreaLogin" Margin="25" FontSize="14" Grid.Row="0" Grid.Column="2">
+        <Bold>Área de Acesso Restrito</Bold>
+      </TextBlock>
+      
+      
 
 
     </Grid>
