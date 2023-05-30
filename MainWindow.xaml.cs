@@ -25,5 +25,47 @@ namespace ReservaEmHotel
         {
             InitializeComponent();
         }
+
+        private void areaLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Login();
+            }
+        }
+        private void Login()
+        {
+            if (txtUsuario.Text.ToString().Trim() == "")
+            {
+                MessageBox.Show("Campo vazio, digite seu usuário.", "Campo Vazio", MessageBoxButton.OK, MessageBoxImage.Information);
+                txtUsuario.Text = "";
+                txtUsuario.Focus();
+                return;
+            }
+            if (pswSenha.Password.ToString().Trim() == "")
+            {
+                MessageBox.Show("Campo vazio, digite sua senha.", "Campo Vazio", MessageBoxButton.OK, MessageBoxImage.Information);
+                pswSenha.Password = "";
+                pswSenha.Focus();
+                return;
+            }
+
+            // código para efetuar login
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Login();
+
+        }
+
+        private void LimparCampos()
+        {
+            txtUsuario.Text = "";
+            pswSenha.Password = "";
+            txtUsuario.Focus();
+        }
     }
+
+
 }
